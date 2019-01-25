@@ -102,11 +102,11 @@ var myArrayCopy = myArray.slice(0);
 //DON'T TOUCH THE CODE BELOW
 var myNumbers = [333, 1, 4, 5, 511, 34, 88, 77, 222];
 //DON'T TOUCH THE CODE ABOVE
-function evensOnly(arr){
-  newArray = [];
-  for (i=0; i <arr.length; i++) {
-    if(arr[i]%2 === 0 ) {
-      newArray.push(arr[i]);
+var newArray = []
+function evensOnly(){
+    for (i=0; i< myNumbers.length; i++) {
+    if(myNumbers[i]%2 === 0 ) {
+      newArray.push(myNumbers[i]);
     };
   };
   return newArray;
@@ -144,12 +144,14 @@ var trueFriends =  peopleIknow.filter(function(peopleIknow) {
  */
 
 let randomNumbers = [1, 3453, 34, 456, 32, 3, 2, 0];
-let indexes = [];
+
 
 function indexFinder(arr){
-  for(i=0; i<arr.length; i++){
-    indexes.push(i);
+  newArr = [];
+  for(i=0; i<randomNumbers.length; i++){
+    newArr.push(i);
   };
-  return indexes;
+  return newArr;
 };
 
+let indexes = indexFinder(randomNumbers);
